@@ -65,6 +65,7 @@ public class AddOrderActivity extends BaseActivity implements AddOrderContract.V
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
+        //测试提交
         addOrderPresenter = new AddOrderPresenter(mActivity, this);
     }
 
