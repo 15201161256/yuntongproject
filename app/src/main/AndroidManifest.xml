@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.yuntong">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/TranslucentTheme"
+        tools:replace="android:theme">
+        <activity android:name=".mvp.activity.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvp.MainActivity" />
+        <activity android:name=".mvp.activity.contract.contract_detail.ContractDetailActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".mvp.activity.login.LoginActivity" />
+        <activity android:name=".mvp.activity.register.RegisterActivity" />
+        <activity android:name=".mvp.activity.setpsd.SetPsdActivity" />
+        <activity android:name=".mvp.activity.forgetpsd.ForgetPsdActivity" />
+        <activity android:name=".mvp.activity.affirmpsd.AffirmPsdActivity" />
+
+        <!-- 全屏手机适配的问题解决 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <activity android:name=".mvp.activity.contract.contract_total.ContractTotalActivity" />
+        <activity android:name=".mvp.activity.contract.add_contract.AddContractActivity" />
+        <activity android:name=".mvp.activity.materals.materals_detail.MateralsDetailActivity" />
+        <activity android:name=".mvp.activity.instrument.instrument_detail.InstrumentDetailActivity" />
+        <activity android:name=".mvp.activity.materals.add_materals.AddMaterialsActivity" />
+        <activity android:name=".mvp.activity.instrument.add_instrument.AddInstrumentActivity" />
+        <activity android:name=".mvp.activity.order.order_detail.OrderDetailActivity" />
+        <activity android:name=".mvp.activity.order.order_list.OrderListActivity" />
+        <activity android:name=".mvp.activity.order.add_order.AddOrderActivity" />
+        <activity android:name=".mvp.activity.minor_term.minor_term_list.MinorTermListActivity" />
+        <activity android:name=".mvp.activity.minor_term.minor_term_detail.MinorTermDetailActivity" />
+        <activity android:name=".mvp.activity.minor_term.minor_term_add.MinortermAddActivity" />
+        <activity android:name=".mvp.activity.order.order_finance.FinanceActivity" />
+        <activity android:name=".mvp.activity.contract.lock_contract.LockContractActivity" />
+        <activity android:name=".mvp.activity.order.lock_order.LockOrderActivity" />
+        <activity android:name=".mvp.activity.minor_term.minor_item_lock.LockMinorTermActivity" />
+        <activity android:name=".mvp.activity.instrument.edit_instrument.InstrumentEditActivity" />
+        <activity android:name=".mvp.activity.contract.contract_total_minor_list.ContractToatalMinorActivity" />
+        <activity android:name=".mvp.activity.materals.out_materals_list.MateralsOutListActivity" />
+        <activity android:name=".mvp.activity.materals.put_materals_list.MateralsPutListActivity" />
+        <activity android:name=".mvp.activity.materals.add_put_materals.MateralsAddPutActivity" />
+        <activity android:name=".mvp.activity.materals.add_out_materal.MateralOutAddActivity" />
+        <activity android:name=".mvp.activity.materals.put_materals_list.detail.PutDetailActivity" />
+        <activity android:name=".mvp.activity.materals.out_materals_list.detail.OutDetailActivity" />
+        <activity android:name=".mvp.activity.search.SearchActivity"></activity>
+    </application>
+
+</manifest>

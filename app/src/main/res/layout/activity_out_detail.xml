@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/ic_arrow_black" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/title_text"
+            android:text="出库详情" />
+
+        <RelativeLayout
+            android:id="@+id/add_contract_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:background="@drawable/select_white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/contract_Details_text"
+                    android:text="（财务）" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/debt_review_icon_add" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.example.yuntong.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    style="@style/rel_common"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="出库情况"
+                            android:textColor="@color/blue"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="材料名称" />
+
+                        <TextView
+                            android:id="@+id/materialName_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="出库数量" />
+
+                        <TextView
+                            android:id="@+id/count_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="出库时间" />
+
+                        <TextView
+                            android:id="@+id/createTime_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="使用人" />
+
+                        <TextView
+                            android:id="@+id/applicantName_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="库管" />
+
+                        <TextView
+                            android:id="@+id/auditor_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="备注：" />
+
+                        <TextView
+                            android:id="@+id/remark_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="15dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+
+
+    </com.example.yuntong.view.ObservableScrollView>
+
+
+</LinearLayout>

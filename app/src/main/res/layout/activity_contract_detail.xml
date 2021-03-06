@@ -1,0 +1,380 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/ic_arrow_black" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/title_text"
+            android:text="合同详情" />
+
+    </RelativeLayout>
+
+    <View style="@style/common_gray_line"></View>
+
+
+    <com.example.yuntong.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    style="@style/rel_common"
+                    android:layout_marginTop="15dp"
+                   >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同情况"
+                            android:textColor="@color/blue"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同区域" />
+
+                        <TextView
+                            android:id="@+id/region_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                         />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="甲方名称" />
+
+                        <TextView
+                            android:id="@+id/firstPartyName_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                             />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="中标单位" />
+
+                        <TextView
+                            android:id="@+id/secondPartyName_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                           />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同编号" />
+
+                        <TextView
+                            android:id="@+id/contractNo_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                           />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同名称" />
+
+                        <TextView
+                            android:id="@+id/contractName_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                             />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout
+                    android:id="@+id/detail_rl"
+                    style="@style/rel_common"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同订单" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/contractOrderCount_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                             />
+
+                        <ImageView
+                            style="@style/ImageView_me_w"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="合同金额" />
+
+                        <TextView
+                            android:id="@+id/contractAmount_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                           />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="签订时间" />
+
+                        <TextView
+                            android:id="@+id/signTime_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                          />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="开工时间" />
+
+                        <TextView
+                            android:id="@+id/startTime_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/common_gray_line"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"></View>
+
+                <RelativeLayout style="@style/rel_common">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/contract_Details_text"
+                            android:text="完工时间" />
+
+                        <TextView
+                            android:id="@+id/createTime_tv"
+                            style="@style/contract_Details_text"
+                            android:layout_marginLeft="20dp"
+                           />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+
+
+    </com.example.yuntong.view.ObservableScrollView>
+
+
+</LinearLayout>

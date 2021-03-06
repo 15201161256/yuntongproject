@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#303030</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#2E5BFE</color>
+    <color name="background">#F5F5F5</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="top_search_bg_nt">#ff145f8f</color>
+    <color name="content_text_readed">#ff828282</color>
+    <color name="press_white_nor">#FFFFFF</color>
+    <color name="press_white_ok">#EFF0F4</color>
+
+    <color name="press_gray_ok">#707070</color>
+    <color name="press_gray_nor">#4C4C4C</color>
+
+    <color name="text_item">#5D6F85</color>
+    <color name="text_title_item">#348AFB</color>
+
+
+    <color name="white_drak">#D0EFFA</color>
+
+    <color name="material_colorAccent">#12b7f5</color>
+    <color name="colorPrimaryTrue">#12b7f5</color><!-- titlebar 颜色-->
+
+    <color name="press_transwhite_nor">#55FFFFFF</color>
+    <color name="press_transwhite_ok">#55EFF0F4</color>
+    <color name="huise">#c2979797</color>
+    <color name="mlcheihui">#374046</color><!--黑灰 -->
+    <color name="bg_huise_a">#f2f2f2</color><!--灰色 -->
+    <color name="bg_huise_b">#cacaca</color><!--灰色边框 -->
+    <color name="bg_lvse_a">#f2f6e9</color><!-- 绿色 -->
+    <color name="bg_lvse_b">#b8ce8e</color><!--绿色边框 -->
+    <color name="bg_lanse_a">#e8f6f6</color><!--蓝色 -->
+    <color name="bg_lanse_b">#92dbde</color><!--蓝色边框 -->
+    <color name="bg_fense_a">#f9eaeb</color><!--粉色 -->
+    <color name="bg_fense_b">#fba1a8</color><!--粉色边框 -->
+    <color name="bg_chengse_a">#f8f2ec</color><!--橙色 -->
+    <color name="bg_chengse_b">#f9c189</color><!--橙色边框 -->
+</resources>

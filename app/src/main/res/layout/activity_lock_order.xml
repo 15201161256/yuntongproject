@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/ic_arrow_black" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/title_text"
+            android:text="修改订单" />
+
+        <Button
+            android:id="@+id/ok_bt"
+            style="@style/common_btn"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:text="锁定" />
+
+    </RelativeLayout>
+
+    <View style="@style/common_gray_line"></View>
+
+
+    <com.example.yuntong.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="MISS编号" />
+
+                    <EditText
+                        android:id="@+id/missNo_et"
+                        style="@style/EditFormat" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="税         率" />
+
+                    <EditText
+                        android:id="@+id/taxRate_et"
+                        style="@style/EditFormat_Num"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="订单编号" />
+
+                    <EditText
+                        android:id="@+id/orderNo_et"
+                        style="@style/EditFormat" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="订单名称" />
+
+                    <EditText
+                        android:id="@+id/orderName_et"
+                        style="@style/EditFormat" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="大项编号" />
+
+                    <EditText
+                        android:id="@+id/bigItemNo_et"
+                        style="@style/EditFormat" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="订单金额" />
+
+                    <EditText
+                        android:id="@+id/orderAmount_et"
+                        style="@style/EditFormat_Num" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/time_start_tv"
+                        style="@style/Details_text"
+                        android:layout_marginLeft="20dp"
+                        android:text="请选择时间"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/rihgt_back" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/edit_bt"
+                style="@style/common_btn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:text="修改订单" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+
+
+    </com.example.yuntong.view.ObservableScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/select_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Details_text"
+                    android:layout_marginLeft="15dp"
+                    android:text="必填项"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View style="@style/common_gray_line"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/select_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Details_text"
+                    android:layout_marginLeft="15dp"
+                    android:text="小项名称" />
+
+                <EditText
+                    android:id="@+id/name_et"
+                    style="@style/EditFormat" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View style="@style/common_gray_line"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/select_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Details_text"
+                    android:layout_marginLeft="15dp"
+                    android:text="合作单位" />
+
+                <EditText
+                    android:id="@+id/cooperator_et"
+                    style="@style/EditFormat" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View style="@style/common_gray_line"></View>
+
+        <RelativeLayout
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/select_white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Details_text"
+                    android:layout_marginLeft="15dp"
+                    android:text="开工日期" />
+
+                <TextView
+                    android:id="@+id/time_start_tv"
+                    style="@style/Details_text"
+                    android:layout_marginLeft="15dp"
+                    android:text="请选择时间"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/rihgt_back" />
+
+        </RelativeLayout>
+
+        <View style="@style/common_gray_line"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="选填项"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/finishDate_time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="完工日期" />
+
+                    <TextView
+                        android:id="@+id/time_finishDate_tv"
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="请选择时间"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/rihgt_back" />
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:id="@+id/checkAndAcceptDate_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="验收日期" />
+
+                    <TextView
+                        android:id="@+id/checkAndAcceptDate_tv"
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="请选择时间"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/rihgt_back" />
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="审定总金额" />
+
+                    <EditText
+                        android:id="@+id/amount_et"
+                        style="@style/EditFormat_Num"
+                         />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="审定乙方施工费" />
+
+                    <EditText
+                        android:id="@+id/secondPartyConstructionCost_et"
+                        style="@style/EditFormat_Num"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="审定甲供材" />
+
+                    <EditText
+                        android:id="@+id/firstPartyMaterialCost_et"
+                        style="@style/EditFormat_Num"
+                       />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="审定乙供材费用" />
+
+                    <EditText
+                        android:id="@+id/secondPartyMaterialCost_et"
+                        style="@style/EditFormat_Num"
+                         />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="乙方安全生产费用" />
+
+                    <EditText
+                        android:id="@+id/secondPartySafeProductionCost_et"
+                        style="@style/EditFormat_Num"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="规费" />
+
+                    <EditText
+                        android:id="@+id/stipulatedFee_et"
+                        style="@style/EditFormat_Num"
+                       />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <!--暂时隐藏小项回款额-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="小项回款额" />
+
+                    <EditText
+                        android:id="@+id/amountCashed_et"
+                        style="@style/EditFormat_Num"
+                         />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--<View style="@style/common_gray_line"></View>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="施工队审计费" />
+
+                    <EditText
+                        android:id="@+id/secondPartyAuditFee_et"
+                        style="@style/EditFormat_Num"
+                      />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="施工队扣款" />
+
+                    <EditText
+                        android:id="@+id/secondPartyDeductedAmount_et"
+                        style="@style/EditFormat_Num"
+                         />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View style="@style/common_gray_line"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="税金" />
+
+                    <EditText
+                        android:id="@+id/taxAmount_et"
+                        style="@style/EditFormat_Num"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="管理费" />
+
+                    <EditText
+                        android:id="@+id/managementFee_et"
+                        style="@style/EditFormat_Num"
+                       />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <FrameLayout
+        android:id="@+id/layFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F5F5" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home_rbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/bt_selector_option"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/font_color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/find_rbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bt_selector_borrow"
+                android:gravity="center"
+                android:text="合同"
+                android:textColor="@drawable/font_color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/money_rbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bt_selector_invest"
+                android:gravity="center"
+                android:text="材料"
+                android:textColor="@drawable/font_color_selector"
+                android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/instrument_rbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bt_selector_instrument"
+                android:gravity="center"
+                android:text="工具"
+                android:textColor="@drawable/font_color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/me_rbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bt_selector_me"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/font_color_selector"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

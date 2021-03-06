@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/common_bg">
+
+    <include
+        layout="@layout/msearch_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/search_all"
+                android:textColor="@color/huise"
+                android:textSize="12sp" />
+
+
+            <include
+                android:id="@+id/shadowview"
+                layout="@layout/shadow_set_layout" />
+
+            <com.example.yuntong.view.search.FlowLayout
+                android:id="@+id/id_flowlayouthot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"></com.example.yuntong.view.search.FlowLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/search_lately"
+                    android:textColor="@color/huise"
+                    android:textSize="12sp"
+
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvclearolddata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sousuo_clearolddata_shap"
+                    android:text="@string/search_clear"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <include
+                android:id="@+id/shadowview"
+                layout="@layout/shadow_set_layout" />
+
+            <com.example.yuntong.view.search.selfSearchGridView
+                android:id="@+id/gridviewolddata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="3"
+                android:padding="10dp">
+
+            </com.example.yuntong.view.search.selfSearchGridView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

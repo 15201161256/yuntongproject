@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/relativeLayout"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:id="@+id/back_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ic_arrow_black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/buttonback">
+                <!--
+                    编辑框控件
+                    宽度匹配屏幕
+                    高度适应文字
+                    在编辑框左边画上搜索的那个图片
+                    单行编辑框
+                 -->
+                <EditText
+                    android:id="@+id/et_searchtext_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/search_select_gray"
+                    android:drawableLeft="@mipmap/explore_search_icon"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/search_hint"
+                    android:imeOptions="actionSearch"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="17sp" />
+                <!--
+                    图片控件
+                    宽度高度都是适应图片大小
+                    图片资源来自一个配置文件
+                    对齐在编辑框的右边
+                    默认不可见且不占用屏幕位置
+                 -->
+                <ImageView
+                    android:id="@+id/ib_searchtext_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/et_searchtext_search"
+                    android:layout_alignRight="@+id/et_searchtext_search"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/explore_search_close"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/buttonback"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/select_white"
+                android:text="@string/search_cancel"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+

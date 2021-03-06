@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/rel_common"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:text="回款记录"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:text="回款次数" />
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+                android:text="第一次回款" />
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+                android:text="第二次回款" />
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+                android:text="第三次回款" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:text="回款金额(元)" />
+
+            <TextView
+                android:id="@+id/amount1_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+               />
+
+            <TextView
+                android:id="@+id/amount2_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+               />
+
+            <TextView
+                android:id="@+id/amount3_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/contract_Details_text"
+                android:text="回款时间" />
+
+            <TextView
+                android:id="@+id/paidTime1_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+               />
+
+            <TextView
+                android:id="@+id/paidTime2_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+             />
+
+            <TextView
+                android:id="@+id/paidTime3_tv"
+                style="@style/contract_Details_text"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

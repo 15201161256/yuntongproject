@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conten_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:elevation="5dp"
+    android:background="@drawable/select_chamfer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/debt_review_icon_bank" />
+
+                <TextView
+                    style="@style/home_item_title_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="合同订单" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_ll"
+                android:layout_width="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:background="@drawable/select_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/home_item_title_text"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="编辑"
+                    android:textColor="@color/text_title_item" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/rihgt_back" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <View
+            style="@style/common_gray_line"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/home_item_text"
+                                android:text="订单编号：" />
+
+                            <TextView
+                                android:id="@+id/orderNo_tv"
+                                style="@style/home_item_text"
+                                android:layout_marginLeft="10dp"
+                                android:text="jq9090090" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/show_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical" />
+
+                            <TextView
+                                android:id="@+id/state_tv"
+                                style="@style/home_item_text"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/home_item_text"
+                                android:text="订单名称：" />
+
+                            <TextView
+                                android:id="@+id/orderName_tv"
+                                style="@style/home_item_text"
+                                android:layout_marginLeft="10dp"
+                                android:text="河北电缆业务" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/home_item_text"
+                                android:text="大项编号：" />
+
+                            <TextView
+                                android:id="@+id/bigItemNo_tv"
+                                style="@style/home_item_text"
+                                android:layout_marginLeft="10dp"
+                                android:text="河北电缆业务" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/home_item_text"
+                                android:text="订单金额：" />
+
+                            <TextView
+                                android:id="@+id/orderAmount_tv"
+                                style="@style/home_item_text"
+                                android:layout_marginLeft="10dp"
+                                android:text="30万元" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

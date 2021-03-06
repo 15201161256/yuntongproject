@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/ic_arrow_black" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/title_text"
+            android:text="设置密码" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/common_gray_line"></View>
+
+
+    <EditText
+        android:id="@+id/set_psd_et"
+        android:layout_width="match_parent"
+        android:layout_height="55.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="设置密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textColorHint="#ACACAC"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F5F5F5" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.5dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/ok_psd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="55.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColorHint="#ACACAC"
+            android:textSize="17sp"></EditText>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F5F5F5" />
+
+    <Button
+        android:id="@+id/next_bt"
+        style="@style/common_btn"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="确认" />
+
+</LinearLayout>

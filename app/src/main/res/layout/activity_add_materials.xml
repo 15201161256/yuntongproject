@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/ic_arrow_black" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/title_text"
+            android:text="新增材料" />
+
+    </RelativeLayout>
+
+    <View style="@style/common_gray_line"></View>
+
+
+    <com.example.yuntong.view.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="材料名称" />
+
+                    <EditText
+                        android:id="@+id/materialName_et"
+                        style="@style/EditFormat"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View style="@style/common_gray_line"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="规格型号" />
+
+                    <EditText
+                        android:id="@+id/mat_model_et"
+                        style="@style/EditFormat"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View style="@style/common_gray_line"></View>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="材料单位" />
+
+                    <EditText
+                        android:id="@+id/mat_unit_et"
+                        style="@style/EditFormat"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View style="@style/common_gray_line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="出库数量" />
+
+                        <EditText
+                            android:id="@+id/mat_comeNum_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="请输入"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <View style="@style/common_gray_line"></View>
+                <RelativeLayout
+                    android:id="@+id/come_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="出库时间" />
+
+                        <TextView
+                            android:id="@+id/come_time_tv"
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="2019年1月1日"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@mipmap/rihgt_back" />
+
+                </RelativeLayout>
+
+                <View style="@style/common_gray_line"></View>
+                <RelativeLayout
+                    android:id="@+id/start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="入库时间" />
+
+                        <TextView
+                            android:id="@+id/enter_time_tv"
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="2019年1月1日"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@mipmap/rihgt_back" />
+
+                </RelativeLayout>
+
+                <View style="@style/common_gray_line"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="材料汇总" />
+
+                        <EditText
+                            android:id="@+id/mat_totalNum_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="请输入"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <View style="@style/common_gray_line"></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/select_white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Details_text"
+                            android:layout_marginLeft="15dp"
+                            android:text="领  取  人" />
+
+                        <EditText
+                            android:id="@+id/mat_receiver_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="请输入"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <View style="@style/common_gray_line"></View>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:background="@drawable/select_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Details_text"
+                        android:layout_marginLeft="15dp"
+                        android:text="库        管" />
+
+                    <EditText
+                        android:id="@+id/mat_keeper_et"
+                        style="@style/EditFormat"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/select_white">
+
+                <TextView
+                    style="@style/Details_text"
+                    android:layout_gravity="left"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="备        注" />
+
+                <EditText
+                    android:id="@+id/mat_remark_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="8dp"
+                    android:background="@drawable/select_editext"
+                    android:layout_marginRight="10dp"
+                    android:hint="请输入"
+                    android:maxLength="50"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/add_bt"
+                style="@style/common_btn"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:text="确定" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+        </LinearLayout>
+
+
+    </com.example.yuntong.view.ObservableScrollView>
+
+
+
+</LinearLayout>
