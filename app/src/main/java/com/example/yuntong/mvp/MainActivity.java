@@ -126,6 +126,9 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
                 }
                 ft.commit();
                 break;
+
+            default:
+                break;
         }
     }
 
@@ -150,7 +153,13 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         }
     }
 
-    //返回键
+    /**
+     * 返回
+     *
+     * @param keyCode
+     * @param event
+     * @return
+     */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
